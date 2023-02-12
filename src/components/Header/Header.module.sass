@@ -1,0 +1,58 @@
+$r: random(155)+100
+$g: random(155)+100
+$b: random(155)+100
+
+.header
+  position: sticky
+  top: 0
+  box-sizing: border-box
+  margin: 0 auto
+  padding: 0
+  list-style-type: none
+  font-weight: 400
+  transition-duration: 1s
+
+nav
+  border-radius: 0 0 50px 50px
+  box-shadow: 0 0 5px 5px rgba(0,0,0,.4)
+  overflow: hidden
+  &:hover
+    border-bottom: 2px solid rgb($r,$g,$b)
+    box-shadow: 0 0 20px rgba($r,$g,$b,.5)
+  &:hover li a
+    color: rgb($r,$g,$b)
+    text-shadow: 0 0 10px rgba($r,$g,$b,.8)
+
+.pagActive
+    color: rgb($r,$g,$b)
+    text-shadow: 0 0 10px rgba($r,$g,$b,.8)
+    border-bottom: 2px solid rgb($r,$g,$b)
+    box-shadow: 0 0 20px rgba($r,$g,$b,.5)
+
+ul
+  display: flex
+  justify-content: center
+  align-items: center
+  text-align: center
+  height: 35px
+li
+  display: inline-block
+  &
+    padding: 0 2%
+  &:hover a
+    position: relative
+    color: rgba(255,255,255,.9)
+a
+  text-decoration: none
+  line-height: 50px
+  padding: 5px 15px
+  color: aliceblue
+  font-size: 25px
+
+li a:hover
+  border: 2px solid rgb($r,$g,$b)
+  background: rgba($r,$g,$b,.4)
+  box-shadow: 0 0 5px 1px rgb($r,$g,$b)
+  transition-duration: .1s
+  border-bottom: 10px solid rgb($r,$g,$b)
+  color: black
